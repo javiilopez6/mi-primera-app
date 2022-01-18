@@ -4,7 +4,8 @@ import React, { Component } from 'react';
     Un componente se repinta si se cambia el estado. 
     Luego en el estado se debe de almacenar lo que quiero cambiar dinamicamente.
     El estado en una clase se hace con this.state y es un objeto inmutable.
-    Solo se puede modificar con un metodo especial llamado setState();
+    Solo se puede modificar con un metodo especial llamado setState;
+
 
  * */
 export default class Estado extends Component {
@@ -18,7 +19,7 @@ export default class Estado extends Component {
         return (
             <>
             <h1>Componente Estado</h1>
-            <h2>{this.state.contador}</h2>
+            <h2>{this.setState({contador: this.state.contador+1})}</h2>
             </>
         )
     }
@@ -29,4 +30,4 @@ export default class Estado extends Component {
 
 
 
-//  quiero que el contador cada segundo aumente 1 setInterval(); y el setStat();
+//  quiero que el contador cada segundo aumente 1 setInterval; y el setState;

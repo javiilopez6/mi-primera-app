@@ -1,0 +1,29 @@
+picture{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100px;
+}
+
+picture.is-small{
+    width: 60px;
+}
+picture.is-large{
+    width: 160px;
+}
+
+img{
+    box-shadow: 0px 0px 20px greenyellow;
+    border-radius: 60%;
+    width: 100%;
+
+}
+button{
+    box-shadow: 0px 0px 20px greenyellow;
+    border-radius: 60%;
+    width: 100%;
+}
+
+img.disabled{
+    opacity: 0.2;
+}
